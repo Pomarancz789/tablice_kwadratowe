@@ -29,15 +29,25 @@ int main() {
     
     
     //suma elementów nad przekątną
-    int suma=0;
+    int sumanad=0;
     for (int k=0; k<5; k++) {
         for (int l=k+1; l<5; l++) {
-            suma+=tab[k][l];
+            sumanad+=tab[k][l];
         }
     }
-    cout<<"suma elementow nad przekatna: " << suma<<endl;
+    cout<<"suma elementow nad przekatna: " << sumanad<< endl;
     //suma elementów nad przekątną
     
+    
+    //suma elementów pod przekątną
+    int sumapod=0;
+    for (int k=0; k<5; k++) {
+        for (int l=k-1; l>-1; l--) {
+            sumapod+=tab[k][l];
+        }
+    }
+    cout<<"suma elementow pod przekatna: " << sumapod<< endl;
+    //suma elementów pod przekątną
     
     return 0;
 }
